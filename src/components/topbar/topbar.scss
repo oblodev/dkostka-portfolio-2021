@@ -1,0 +1,93 @@
+@import "../../global.scss";
+
+.topbar {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  color: $russian-violet;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topbar-left {
+    .logo {
+      font-size: 30px;
+      font-weight: 700;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .topbar-right {
+    .hamburger {
+      width: 32px;
+      height: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: $russian-violet;
+        transform-origin: left;
+        transition: all 1.2s ease;
+      }
+    }
+
+    ul {
+      display: none;
+
+      align-items: center;
+      justify-content: center;
+
+      li {
+        margin-right: 20px;
+        padding: 2px;
+        transition: 0.4s ease-out;
+        border-bottom: 3px solid #fff;
+
+        a {
+          color: inherit;
+          font-size: 18px;
+          font-weight: 600;
+          text-decoration: none;
+        }
+      }
+
+      li:hover {
+        cursor: pointer;
+        border-bottom: 3px solid $russian-violet;
+      }
+    }
+  }
+  &.active {
+    background-color: $russian-violet;
+    color: #fff !important;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: #fff;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: #fff;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
