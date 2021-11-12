@@ -7,7 +7,7 @@ function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="topbar-left">
           <a href="#intro" className="logo">
-            dkostka<span className="dot-color">.</span>dev
+            dkostka<span className="dot-color">.</span>
           </a>
           <div className="itemContainer"></div>
         </div>
