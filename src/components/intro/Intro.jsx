@@ -1,20 +1,9 @@
 import "./intro.scss";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
 
+import Dev from "../dev/Dev";
 import { KeyboardArrowDown } from "@material-ui/icons";
 
 function Intro() {
-  const textRef = useRef();
-  useEffect(() => {
-    init(textRef.current, {
-      showCursor: true,
-      backDelay: 1500,
-      backSpeed: 60,
-      strings: ["Self thaugt Developer", "Front End", "Content Creator"],
-    });
-  }, []);
-
   return (
     <div className="intro" id="intro">
       <div className="intro-left">
@@ -27,10 +16,10 @@ function Intro() {
       <div className="intro-right">
         <div className="wrapper">
           <h2>Hey, I'm Dawid ✌🏼</h2>
-          <h3>
-            a <span ref={textRef}></span>
-          </h3>
-          <h4>based in Vienna, Austria</h4>
+          <Dev />
+          <h4>
+            based in <span className="sm-back">Vienna,</span> Austria
+          </h4>
           <div className="btn-wrapper">
             <a href="#about">
               <span>about</span>

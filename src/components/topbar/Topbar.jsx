@@ -16,13 +16,17 @@ function Topbar({ menuOpen, setMenuOpen }) {
           <div className="desktop-wrap">
             <ul>
               <li>
-                <a href="#about">about</a>
+                <a href="#about" className="sm-back">
+                  about
+                </a>
               </li>
               <li>
                 <a href="#portfolio">portfolio</a>
               </li>
               <li>
-                <a href="#contact">contact</a>
+                <a href="#contact" className="sm-back">
+                  contact
+                </a>
               </li>
               <li>
                 <a href="#contact">dm</a>

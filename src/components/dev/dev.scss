@@ -1,0 +1,29 @@
+.dev-title {
+  height: 50px;
+  overflow: hidden;
+  .dev-title-wrapper {
+    height: 100%;
+    animation: move 6s ease-in-out infinite alternate;
+    overflow: visible;
+    @keyframes move {
+      50% {
+        transform: translateY(-50px);
+      }
+      100% {
+        transform: translateY(-100px);
+      }
+    }
+
+    .dev-title-item {
+      height: 50px;
+      font-size: 30px;
+      color: inherit;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.under {
+  border-bottom: 3px solid #f5df4e;
+}

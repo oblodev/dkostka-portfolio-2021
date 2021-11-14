@@ -4,7 +4,7 @@
   width: 100%;
   height: 70px;
   background-color: #fff;
-  color: $russian-violet;
+  color: #000;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -24,31 +24,37 @@
       text-decoration: none;
       color: inherit;
     }
+
+    .dot-color {
+      color: #f5df4e;
+    }
   }
 
   .topbar-right {
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .desktop-wrap {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-      li {
-        margin-right: 20px;
-        padding: 2px;
-        transition: 0.4s ease-out;
-        border-bottom: 3px solid #fff;
+        li {
+          margin-right: 20px;
+          padding: 2px;
+          transition: 0.4s ease-out;
+          border-bottom: 3px solid #fff;
 
-        a {
-          color: inherit;
-          font-size: 18px;
-          font-weight: 600;
-          text-decoration: none;
+          &:hover {
+            cursor: pointer;
+            border-bottom: 3px solid $russian-violet;
+          }
+
+          a {
+            color: inherit;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+          }
         }
-      }
-
-      li:hover {
-        cursor: pointer;
-        border-bottom: 3px solid $russian-violet;
       }
     }
 
@@ -112,5 +118,21 @@ $breakpoint-xxl: 1201px;
   .wrapper {
     width: 66%;
     margin: auto;
+  }
+}
+
+.sm-back {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    z-index: -4;
+    content: "";
+    background-color: #f5df4e;
+    height: 100%;
+    width: 88%;
+    left: -4px;
+    bottom: -2px;
+    position: absolute;
   }
 }

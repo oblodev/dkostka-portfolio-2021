@@ -22,7 +22,7 @@
         width: 500px;
         height: 500px;
         border-radius: 50%;
-        border: 10px solid $lavender-web;
+        border: 4px solid#f5df4e;
         overflow: hidden;
         display: block;
 
@@ -51,31 +51,10 @@
         margin: 10px 0;
       }
 
-      h3 {
-        font-size: 36px;
-
-        span {
-          font-size: inherit;
-          color: $coq;
-        }
-
-        .ityped-cursor {
-          animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-          50% {
-            opacity: 1;
-          }
-          100% {
-            opacity: 0;
-          }
-        }
-      }
-
       h4 {
         font-size: 20px;
-        margin-top: 20px;
+        margin-top: 25px;
+        font-weight: 400;
       }
 
       .btn-wrapper {
@@ -112,7 +91,7 @@
           left: 0;
           width: 0;
           height: 100%;
-          background: #04080f;
+          background: #f5df4e;
           transition: all 0.35s;
         }
 
@@ -146,5 +125,21 @@
         }
       }
     }
+  }
+}
+
+.sm-back {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    z-index: -4;
+    content: "";
+    background-color: #f5df4e;
+    height: 100%;
+    width: 92%;
+    left: -4px;
+    bottom: -2px;
+    position: absolute;
   }
 }
