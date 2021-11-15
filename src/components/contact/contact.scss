@@ -123,11 +123,20 @@
           background-color: #343a40;
           color: #fff;
           border-color: #343a40;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
         }
         .btn:hover {
           color: #fff;
           background-color: #23272b;
           border-color: #1d2124;
+        }
+
+        .arrow {
+          margin-top: 4px;
+          height: 17px;
         }
       }
     }

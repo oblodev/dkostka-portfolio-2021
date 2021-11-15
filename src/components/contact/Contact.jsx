@@ -1,8 +1,41 @@
 import React from "react";
 import "./contact.scss";
-import { GitHub, Twitter } from "@material-ui/icons";
+import { GitHub, Twitter, ArrowForwardIos } from "@material-ui/icons";
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 
 function Contact() {
+  const formRef = useRef();
+  const [done, setDone] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3kk9tlp",
+        "template_j143vi8",
+        formRef.current,
+        "user_rBqyeDZjKyFf6rddCecp2"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    setName("");
+    setEmail("");
+    setText("");
+  };
+
   return (
     <div className="contact" id="contact">
       <div className="contact-container">
@@ -38,12 +71,7 @@ function Contact() {
           <div className="contact-right">
             <h2 className="contact-title">Contact</h2>
 
-            <form
-              id="contact-form"
-              class="form-border"
-              action="php/mail.php"
-              method="post"
-            >
+            <form ref={formRef}>
               <div class="form-group">
                 <label for="name">Your Name:</label>
                 <input
@@ -52,6 +80,8 @@ function Contact() {
                   type="text"
                   class="form-control"
                   required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div class="form-group">
@@ -62,6 +92,8 @@ function Contact() {
                   type="text"
                   class="form-control"
                   required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
@@ -73,16 +105,18 @@ function Contact() {
                   class="form-control py-1"
                   rows="5"
                   required
+                  value={text}
+                  onChange={(e) => setText(e.target.value)}
                 ></textarea>
               </div>
-              <p class="pt-2 mb-0 text-center text-lg-left">
-                <button id="submit-btn" class="btn" type="submit">
-                  Send
-                  <span class="ml-3">
-                    <i class="fas fa-arrow-right"></i>
-                  </span>
-                </button>
-              </p>
+
+              <button className="btn" type="submit" onClick={handleSubmit}>
+                Send
+                <span>
+                  <ArrowForwardIos className="arrow" />
+                </span>
+              </button>
+              {done && <p> Your message was successfully sent!</p>}
             </form>
           </div>
         </div>
