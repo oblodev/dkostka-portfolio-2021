@@ -63,6 +63,7 @@ function Portfolio() {
           </div>
         ))}
       </div>
+      <div className="y-bottom"></div>
     </div>
   );
 }

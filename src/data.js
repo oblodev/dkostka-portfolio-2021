@@ -24,6 +24,11 @@ export const featuredApps = [
     title: "Crypto Price",
     img: "images/kryptokurs-mock.jpg",
   },
+  {
+    id: 6,
+    title: "Lawyer Website",
+    img: "images/sucursus.jpg",
+  },
 ];
 
 export const freelanceApps = [
@@ -41,6 +46,11 @@ export const freelanceApps = [
     id: 3,
     title: "CBDELO Webshop",
     img: "images/cbdelo1.jpg",
+  },
+  {
+    id: 4,
+    title: "Lawyer Website",
+    img: "images/sucursus.jpg",
   },
 ];
 

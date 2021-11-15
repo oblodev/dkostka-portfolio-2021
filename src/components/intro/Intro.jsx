@@ -35,6 +35,7 @@ function Intro() {
           </div>
         </div>
       </div>
+      <div className="y-bottom"></div>
     </div>
   );
 }

@@ -126,6 +126,14 @@
       }
     }
   }
+
+  .y-bottom {
+    width: 100%;
+    height: 20px;
+    background-color: $main-color;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .sm-back {
