@@ -1,7 +1,12 @@
 import React from "react";
 import "./topbar.scss";
+import { ThemeContext } from "../../context";
+import { useContext } from "react";
 
 function Topbar({ menuOpen, setMenuOpen }) {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
@@ -15,7 +20,11 @@ function Topbar({ menuOpen, setMenuOpen }) {
         <div className="topbar-right">
           <div className="desktop-wrap">
             <ul>
-              <li>
+              <li
+                style={{
+                  color: darkMode ? "#f1f1f1" : "#343a40",
+                }}
+              >
                 <a href="#about" className="sm-back">
                   about
                 </a>

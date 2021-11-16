@@ -50,7 +50,7 @@
             }
 
             .border {
-              border-bottom: 4px solid #f5df4e !important;
+              border-bottom: 4px solid #f5df4e;
               position: absolute;
               overflow: hidden;
               margin-left: 5px;
@@ -147,5 +147,78 @@
     width: 32px;
     height: 32px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .about {
+    flex-direction: column;
+    font-size: 16px !important;
+
+    .wrap {
+      max-width: 1000px;
+
+      h2 {
+        font-size: 24px !important;
+        margin-top: 10px;
+      }
+
+      .about-msg {
+        font-size: 16px;
+        font-weight: 500;
+        overflow: hidden;
+      }
+
+      .about-info-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px !important;
+
+        .about-info-text {
+          display: flex;
+          flex-direction: column;
+          padding: 0px 0 0 0 !important;
+
+          h3 {
+            font-size: 20px !important;
+            font-weight: 400;
+            margin-top: 10px !important;
+
+            .border {
+              border-bottom: 2px solid #f5df4e !important;
+            }
+
+            span {
+              font-weight: 700;
+            }
+          }
+
+          p {
+            font-size: 16px !important;
+            line-height: 1.5 !important;
+            margin-top: 8px !important;
+          }
+        }
+      }
+
+      .skills {
+        margin-top: 10px;
+
+        .skills-wrapper {
+          padding: 0 26px;
+
+          .skills-item {
+            font-size: 14px;
+            padding: 4px;
+
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
   }
 }
