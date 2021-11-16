@@ -1,11 +1,11 @@
 @import "../../global.scss";
 
 .portfolio {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  transition: all 0.3s ease-in;
 
   h2 {
     font-size: 30px;

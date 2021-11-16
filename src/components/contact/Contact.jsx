@@ -16,8 +16,8 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_3kk9tlp",
-        "template_j143vi8",
+        "service_xbg079f",
+        "template_f02ip3x",
         formRef.current,
         "user_rBqyeDZjKyFf6rddCecp2"
       )
@@ -50,18 +50,18 @@ function Contact() {
                   in touch.{" "}
                 </p>
                 <p class="bolded">Available for freelance work: </p>
-                <a href="www.google.com" className="mail">
+                <a href="mailto:hello@dkostka.dev" className="mail">
                   hello@dkostka.dev
                 </a>
               </div>
               <div className="icon-wrapper">
                 <div className="contact-info-icons">
-                  <a href="www.github.com">
+                  <a href="https://www.github.com/oblodev">
                     <GitHub className="c-icon" />
                   </a>
                 </div>
                 <div className="contact-info-icons">
-                  <a href="www.twitter.com">
+                  <a href="https://twitter.com/dkostka_dev">
                     <Twitter className="c-icon" />
                   </a>
                 </div>
@@ -71,15 +71,15 @@ function Contact() {
           <div className="contact-right">
             <h2 className="contact-title">Contact</h2>
 
-            <form ref={formRef}>
+            <form ref={formRef} onSubmit={handleSubmit}>
               <div class="form-group">
                 <label for="name">Your Name:</label>
                 <input
+                  required
                   id="name"
                   name="user_name"
                   type="text"
                   class="form-control"
-                  required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -87,11 +87,11 @@ function Contact() {
               <div class="form-group">
                 <label>Email Address:</label>
                 <input
+                  required
                   id="email"
                   name="user_email"
                   type="text"
                   class="form-control"
-                  required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -100,17 +100,17 @@ function Contact() {
               <div class="form-group">
                 <label for="form-message">How can I Help you?</label>
                 <textarea
+                  required
                   id="form-message"
                   name="message"
                   class="form-control py-1"
                   rows="5"
-                  required
                   value={text}
                   onChange={(e) => setText(e.target.value)}
                 ></textarea>
               </div>
 
-              <button className="btn" type="submit" onClick={handleSubmit}>
+              <button className="btn" type="submit">
                 Send
                 <span>
                   <ArrowForwardIos className="arrow" />

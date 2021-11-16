@@ -98,6 +98,7 @@ function About() {
           </div>
         </div>
       </div>
+      <div className="y-bottom"></div>
     </div>
   );
 }

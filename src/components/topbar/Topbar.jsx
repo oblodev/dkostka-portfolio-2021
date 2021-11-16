@@ -28,9 +28,6 @@ function Topbar({ menuOpen, setMenuOpen }) {
                   contact
                 </a>
               </li>
-              <li>
-                <a href="#contact">dm</a>
-              </li>
             </ul>
           </div>
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

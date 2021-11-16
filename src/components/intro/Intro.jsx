@@ -2,8 +2,13 @@ import "./intro.scss";
 
 import Dev from "../dev/Dev";
 import { KeyboardArrowDown } from "@material-ui/icons";
+import { useContext } from "react";
+import { ThemeContext } from "../../context.js";
 
 function Intro() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="intro" id="intro">
       <div className="intro-left">
@@ -21,10 +26,22 @@ function Intro() {
             based in <span className="sm-back">Vienna,</span> Austria
           </h4>
           <div className="btn-wrapper">
-            <a href="#about">
+            <a
+              href="#about"
+              style={{
+                border: darkMode && "1px solid #fff",
+                color: darkMode && "#fff",
+              }}
+            >
               <span>about</span>
             </a>
-            <a href="#portfolio">
+            <a
+              href="#portfolio"
+              style={{
+                border: darkMode && "1px solid #fff",
+                color: darkMode && "#fff",
+              }}
+            >
               <span>portfolio</span>
             </a>
           </div>
