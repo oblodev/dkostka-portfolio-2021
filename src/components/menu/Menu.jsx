@@ -13,9 +13,6 @@ function Menu({ menuOpen, setMenuOpen }) {
         <li onClick={() => setMenuOpen(false)}>
           <a href="#contact">contact</a>
         </li>
-        <li onClick={() => setMenuOpen(false)}>
-          <a href="#contact">dm</a>
-        </li>
       </ul>
     </div>
   );

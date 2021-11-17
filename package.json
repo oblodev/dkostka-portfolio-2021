@@ -1,5 +1,6 @@
 {
   "name": "dkostka-dev-portfolio",
+  "homepage": "https://www.dkostka.dev",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

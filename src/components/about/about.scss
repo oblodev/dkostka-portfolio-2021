@@ -198,6 +198,7 @@
             font-size: 16px !important;
             line-height: 1.5 !important;
             margin-top: 8px !important;
+            font-weight: 300;
           }
         }
       }
@@ -208,17 +209,48 @@
         .skills-wrapper {
           padding: 0 26px;
 
-          .skills-item {
-            font-size: 14px;
-            padding: 4px;
+          .skills-border {
+            padding-right: 0;
+            .skills-item {
+              font-size: 14px;
+              padding: 4px;
+              margin-right: 0;
 
-            img {
-              width: 24px;
-              height: 24px;
+              img {
+                width: 24px;
+                height: 24px;
+              }
             }
           }
         }
       }
+    }
+
+    .y-bottom {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .about {
+    .wrap {
+      h2 {
+        margin-top: 8px;
+      }
+      .about-info {
+        .about-info-wrapper {
+          margin-top: 5px;
+          .about-info-text {
+            h3 {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+    h3 {
+      margin-top: 0;
     }
   }
 }

@@ -1,5 +1,6 @@
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;
+$breakpoint-large: 1199px;
 $breakpoint-xxl: 1200px;
 
 @media (max-width: $breakpoint-mobile) {
@@ -35,9 +36,27 @@ $breakpoint-xxl: 1200px;
   }
 }
 
+@media (min-width: 769px) and (max-width: $breakpoint-large) {
+  .wrapper {
+    width: 85% !important;
+    margin: auto;
+  }
+  .toggle {
+    right: 10px !important;
+  }
+
+  .dev-title-item {
+    font-size: 24px;
+  }
+}
+
 @media (min-width: $breakpoint-xxl) {
   .wrapper {
-    width: 66%;
+    width: 80% !important;
     margin: auto;
+  }
+
+  .toggle {
+    right: 80px !important;
   }
 }

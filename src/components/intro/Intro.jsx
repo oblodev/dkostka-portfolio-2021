@@ -20,7 +20,10 @@ function Intro() {
       </div>
       <div className="intro-right">
         <div className="wrapper">
-          <h2>Hey, I'm Dawid ✌🏼</h2>
+          <div className="title-wrapping">
+            <h2>Hey, I'm Dawid </h2>
+            <span className="peace">✌🏼</span>
+          </div>
           <Dev />
           <h4>
             based in <span className="sm-back">Vienna,</span> Austria
