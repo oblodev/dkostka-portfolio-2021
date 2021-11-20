@@ -40,9 +40,24 @@ function Topbar({ menuOpen, setMenuOpen }) {
             </ul>
           </div>
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-            <span className="line1"></span>
-            <span className="line2"></span>
-            <span className="line3"></span>
+            <span
+              className="line1"
+              style={{
+                backgroundColor: darkMode && "#fff",
+              }}
+            ></span>
+            <span
+              className="line2"
+              style={{
+                backgroundColor: darkMode && "#fff",
+              }}
+            ></span>
+            <span
+              className="line3"
+              style={{
+                backgroundColor: darkMode && "#fff",
+              }}
+            ></span>
           </div>
         </div>
       </div>

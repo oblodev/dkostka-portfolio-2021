@@ -19,7 +19,7 @@ function Intro() {
         </div>
       </div>
       <div className="intro-right">
-        <div className="wrapper">
+        <div className="intro-wrapper">
           <div className="title-wrapping">
             <h2>Hey, I'm Dawid </h2>
             <span className="peace">✌🏼</span>

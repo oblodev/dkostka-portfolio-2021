@@ -4,17 +4,18 @@
   display: flex;
   justify-content: center;
   position: relative;
+  width: 100vw;
 
   .wrap {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 
     h2 {
       font-size: 30px;
       overflow: visible;
-      margin-top: 60px;
     }
 
     .about-msg {
@@ -43,7 +44,8 @@
           h3 {
             font-size: 32px;
             font-weight: 400;
-            margin-top: 20px;
+            margin-top: 8px;
+            padding: 4px;
 
             span {
               font-weight: 700;
@@ -51,7 +53,7 @@
 
             .border {
               border-bottom: 4px solid #f5df4e;
-              position: absolute;
+
               overflow: hidden;
               margin-left: 5px;
             }
@@ -137,7 +139,7 @@
 }
 
 .skills-item {
-  padding: 18px;
+  padding: 6px;
   font-size: 18px;
   margin-top: 5px;
   margin-right: 20px;
@@ -157,10 +159,10 @@
 
     .wrap {
       max-width: 1000px;
+      margin-top: 0px;
 
       h2 {
         font-size: 24px !important;
-        margin-top: 10px;
       }
 
       .about-msg {
@@ -252,5 +254,11 @@
     h3 {
       margin-top: 0;
     }
+  }
+}
+
+@media (max-height: 1099) {
+  .skills-item {
+    margin-top: 0px !important;
   }
 }

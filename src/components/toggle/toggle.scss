@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .toggle {
   width: 54px;
   height: 26px;
@@ -26,5 +28,22 @@
     position: absolute;
     cursor: pointer;
     left: 0;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .toggle {
+    height: 20px !important;
+    top: 10px;
+
+    .t-button {
+      width: 20px;
+      height: 19px;
+    }
+
+    .t-icon {
+      width: 14px;
+      height: 14px;
+    }
   }
 }

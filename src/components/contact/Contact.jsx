@@ -16,8 +16,8 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_xbg079f",
-        "template_f02ip3x",
+        "service_09dknlb",
+        "template_j143vi8",
         formRef.current,
         "user_rBqyeDZjKyFf6rddCecp2"
       )
@@ -90,7 +90,7 @@ function Contact() {
                   required
                   id="email"
                   name="user_email"
-                  type="text"
+                  type="email"
                   class="form-control"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -116,7 +116,9 @@ function Contact() {
                   <ArrowForwardIos className="arrow" />
                 </span>
               </button>
-              {done && <p> Your message was successfully sent!</p>}
+              {done && (
+                <p class="success"> Your message was successfully sent!</p>
+              )}
             </form>
           </div>
         </div>
