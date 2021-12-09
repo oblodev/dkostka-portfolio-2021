@@ -257,8 +257,32 @@
   }
 }
 
-@media (max-height: 1099) {
+@media (max-height: 1099px) {
   .skills-item {
     margin-top: 0px !important;
+  }
+}
+
+@media (max-height: 851px) {
+  .about {
+    .wrap {
+      h2 {
+        font-size: 24px !important;
+      }
+
+      .about-msg {
+        font-size: 22px !important;
+      }
+
+      .about-info {
+        .about-info-wrapper {
+          .about-info-text {
+            p {
+              font-size: 16px !important;
+            }
+          }
+        }
+      }
+    }
   }
 }

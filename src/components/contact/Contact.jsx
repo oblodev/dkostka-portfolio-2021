@@ -122,12 +122,12 @@ function Contact() {
             </form>
           </div>
         </div>
-      </div>
-      <div className="footer">
-        <p>Copyright © 2021 All Rights Reserved. </p>
-        <p>
-          Designed by <span className="kostka">dkostka.dev</span>
-        </p>
+        <div className="footer">
+          <p>Copyright © 2021 All Rights Reserved. </p>
+          <p>
+            Designed by <span className="kostka">dkostka.dev</span>
+          </p>
+        </div>
       </div>
     </div>
   );

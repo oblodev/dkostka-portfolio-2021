@@ -7,6 +7,10 @@
   .contact-container {
     width: 86%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
 
     .contact-wrapper {
       padding: 20px;
@@ -145,25 +149,24 @@
         }
       }
     }
-  }
-  .footer {
-    width: 100%;
-    height: 112px;
-    background-color: #111418 !important;
-    position: absolute;
-    bottom: 0 !important;
-    margin-bottom: 0;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 
-    .kostka {
-      color: $main-color;
-    }
+    .footer {
+      height: 112px;
+      width: 100%;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: 0 !important;
 
-    p {
-      line-height: 1.8;
+      .kostka {
+        color: #000;
+      }
+
+      p {
+        line-height: 1.8;
+        margin-right: 40px;
+      }
     }
   }
 }
@@ -243,16 +246,17 @@
           }
         }
       }
-    }
-
-    .footer {
-      display: flex;
-      flex-direction: column;
-      height: 50px;
-
-      p {
-        font-size: 12px;
-        margin-bottom: 0;
+      .footer {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50px;
+        padding-top: 20px;
+        p {
+          font-size: 12px;
+          margin-bottom: 0;
+        }
       }
     }
   }
