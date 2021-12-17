@@ -253,11 +253,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 50px;
+        bottom: 0 !important;
         padding-top: 20px;
+
         p {
-          font-size: 12px;
+          font-size: 13px;
           margin-bottom: 0;
+          text-align: center;
         }
       }
     }
