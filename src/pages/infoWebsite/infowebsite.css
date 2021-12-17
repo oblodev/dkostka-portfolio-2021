@@ -1,0 +1,111 @@
+.infowebsite {
+  margin-top: 10%;
+}
+
+.container {
+  margin: auto;
+  width: 1080px;
+}
+
+.info-img {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.info-img img {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.info-text h2,
+.info-link h3 {
+  margin-bottom: 20px;
+}
+
+.info-text {
+  flex: 0.57;
+  margin-right: 30px;
+}
+
+.info-link {
+  flex: 0.43;
+}
+
+.info-link p {
+  margin-top: 20px;
+}
+
+.info-stack {
+  font-size: 19px;
+  color: #5fb4a2;
+}
+
+.btn-info {
+  align-items: center;
+  align-self: start;
+  border: 1px solid #33323d !important;
+  padding: 12px 26px;
+  color: #33323d;
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.125rem;
+  min-height: 3rem;
+  min-width: 10.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.22s ease-in-out;
+  transition: all 0.22s ease-in-out;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+.btn-info:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.website-image {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.website-image h3 {
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.info-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+  margin-right: 80px;
+}
+
+.info-contact-text {
+  text-decoration: underline;
+}
+
+.info-contact-btn .btn-info {
+  margin-top: 0 !important;
+}
+
+.footer {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}

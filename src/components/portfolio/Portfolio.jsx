@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import PortfolioList from "../PortfolioList.jsx/PortfolioList";
 import { featuredApps, freelanceApps, webApps } from "../../data.js";
+import WebsiteItem from "../websiteitem/WebsiteItem";
 import "./portfolio.scss";
 
 function Portfolio() {
@@ -57,10 +58,7 @@ function Portfolio() {
       </div>
       <div className="container">
         {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
-          </div>
+          <WebsiteItem title={d.title} link={d.link} image={d.img} />
         ))}
       </div>
       <div className="y-bottom"></div>

@@ -26,7 +26,7 @@ function Intro() {
           </div>
           <Dev />
           <h4>
-            based in <span className="sm-back">Vienna,</span> Austria
+            based in <span className="underline">Vienna</span>, Austria
           </h4>
           <div className="btn-wrapper">
             <a

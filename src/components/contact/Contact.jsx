@@ -123,9 +123,8 @@ function Contact() {
           </div>
         </div>
         <div className="footer">
-          <p>Copyright © 2021 All Rights Reserved. </p>
           <p>
-            Designed by <span className="kostka">dkostka.dev</span>
+            Created by <span className="kostka">dkostka.dev</span> © 2021
           </p>
         </div>
       </div>

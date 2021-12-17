@@ -11,7 +11,7 @@ function Topbar({ menuOpen, setMenuOpen }) {
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="topbar-left">
-          <a href="#intro" className="logo">
+          <a href="/" className="logo">
             dkostka<span className="dot-color">.</span>
           </a>
           <div className="itemContainer"></div>
@@ -20,20 +20,18 @@ function Topbar({ menuOpen, setMenuOpen }) {
         <div className="topbar-right">
           <div className="desktop-wrap">
             <ul>
-              <li
-                style={{
-                  color: darkMode ? "#f1f1f1" : "#343a40",
-                }}
-              >
-                <a href="#about" className="sm-back">
+              <li>
+                <a href="#about" className="line">
                   about
                 </a>
               </li>
               <li>
-                <a href="#portfolio">portfolio</a>
+                <a href="#portfolio" className="line">
+                  portfolio
+                </a>
               </li>
               <li>
-                <a href="#contact" className="sm-back">
+                <a href="#contact" className="line">
                   contact
                 </a>
               </li>

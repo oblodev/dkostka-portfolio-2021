@@ -162,6 +162,12 @@
   }
 }
 
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #f5df4e;
+  text-decoration-thickness: 3px;
+}
+
 @media (max-width: $breakpoint-mobile) {
   .intro {
     flex-direction: column;

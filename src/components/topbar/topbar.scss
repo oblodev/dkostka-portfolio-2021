@@ -106,6 +106,10 @@
   }
 }
 
+.line:hover {
+  border-bottom: 3px solid #f5df4e;
+}
+
 @media (max-width: $breakpoint-mobile) {
   .topbar {
     height: 30px;
