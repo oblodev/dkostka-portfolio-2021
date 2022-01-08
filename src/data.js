@@ -47,6 +47,12 @@ export const featuredApps = [
     img: "images/cryptoprice-web.jpg",
     link: "cryptoprice",
   },
+  {
+    id: 9,
+    title: "Muviz App",
+    img: "images/muviz-mock.jpg",
+    link: "muviz",
+  },
 ];
 
 export const freelanceApps = [
@@ -94,5 +100,11 @@ export const webApps = [
     title: "Old Portfolio",
     img: "images/oldportfolio.jpg",
     link: "oldportfolio",
+  },
+  {
+    id: 4,
+    title: "Muviz App",
+    img: "images/muviz-mock.jpg",
+    link: "muviz",
   },
 ];

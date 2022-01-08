@@ -18,6 +18,7 @@ import Cbdelo from "./pages/Cbdelo";
 import OldPortfolio from "./pages/OldPortfolio";
 import KryptoKurs from "./pages/KryptoKurs";
 import Sucursus from "./pages/Sucursus";
+import Muviz from "./pages/Muviz";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -59,6 +60,7 @@ function App() {
             <Route path="/cbdelo" element={<Cbdelo />} />
             <Route path="/oldportfolio" element={<OldPortfolio />} />
             <Route path="/sucursus" element={<Sucursus />} />
+            <Route path="/muviz" element={<Muviz />} />
           </Routes>
         </div>
       </div>

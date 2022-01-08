@@ -21,17 +21,17 @@ function Topbar({ menuOpen, setMenuOpen }) {
           <div className="desktop-wrap">
             <ul>
               <li>
-                <a href="#about" className="line">
+                <a href="https://dkostka.dev/#about" className="line">
                   about
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="line">
+                <a href="https://dkostka.dev/#portfolio" className="line">
                   portfolio
                 </a>
               </li>
               <li>
-                <a href="#contact" className="line">
+                <a href="https://dkostka.dev/#contact" className="line">
                   contact
                 </a>
               </li>

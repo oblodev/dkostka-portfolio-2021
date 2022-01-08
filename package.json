@@ -1,7 +1,7 @@
 {
   "name": "dkostka-dev-portfolio",
-  "homepage": "https://www.dkostka.dev",
-  "version": "0.1.0",
+  "homepage": "https://dkostka.dev",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",

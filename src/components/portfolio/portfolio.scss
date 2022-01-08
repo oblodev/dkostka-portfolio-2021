@@ -59,12 +59,13 @@
       justify-content: center;
       color: #fff;
       position: relative;
-      transition: all 0.6s ease-out;
+      transition: all 0.4s ease-out;
 
       &:hover {
         background-color: #000;
         color: $main-color;
         cursor: pointer;
+        transition: all 0.6s ease-out;
         img {
           opacity: 0.2;
           z-index: 0;

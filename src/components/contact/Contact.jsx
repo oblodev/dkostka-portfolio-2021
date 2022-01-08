@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
 function Contact() {
+  const year = new Date().getFullYear();
   const formRef = useRef();
   const [done, setDone] = useState(false);
   const [name, setName] = useState("");
@@ -124,7 +125,7 @@ function Contact() {
         </div>
         <div className="footer">
           <p>
-            Created by <span className="kostka">dkostka.dev</span> © 2021
+            Created by <span className="kostka">dkostka.dev</span> © {year}
           </p>
         </div>
       </div>

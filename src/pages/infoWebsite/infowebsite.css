@@ -128,12 +128,21 @@
     flex-direction: column;
   }
 
+  .info-text {
+    margin-right: 10px;
+  }
+
+  .info-link h3 {
+    margin-top: 40px;
+  }
+
   .website-image {
     padding: 0;
   }
 
   .info-contact {
     flex-direction: column;
+    padding: 20p 1px;
   }
 
   .info-contact h2 {
